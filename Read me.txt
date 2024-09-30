@@ -1,0 +1,48 @@
+PS D:\NESTJS\Angular_Nest_SQLITE\angular-frontend> node -v
+v20.16.0
+PS D:\NESTJS\Angular_Nest_SQLITE\angular-frontend> npm -v
+10.8.1
+PS D:\NESTJS\Angular_Nest_SQLITE\angular-frontend> ng version
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 18.2.6
+
+$ npm install @angular/cli@latest
+$ npm install json-server 
+Now create a db.json file into main root.
+$ json-server --watch db.json
+
+db.json
+=======
+{
+    "books":[
+      {
+        "id": 1,
+        "title": "html",
+        "author": "om"
+      },
+      {
+         "id": 2,
+         "title": "JAVA",
+         "author": "ravi"
+       }
+      ]
+  }
+
+
+PS D:\NESTJS\Angular_Nest_SQLITE> ng new angular-frontend  --no-standalone //above angular 17 use this for 
+App.module.ts file will be created automatically.
+OR
+$ ng new angular-frontend  --no-standalone 
+$ ng generate component book
+OR
+$ ng g component book
+$ ng g service book
+$ ng g interface book
